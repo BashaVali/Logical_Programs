@@ -20,7 +20,8 @@ namespace LogicalProblems
                                   "4.ReverseNumber" + "\n " +
                                   "5.CouponNumber" + "\n " +
                                   "6.StopWatch" + "\n" +
-                                  "7.Exit" + "\n");
+                                  "7.VendingMachine" + "\n" +
+                                  "8.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -60,6 +61,11 @@ namespace LogicalProblems
                         stopWatch.Start();
                         break;
                     case 7:
+                        VendingMachine vendingMachine = new VendingMachine();
+                        vendingMachine.Change(2250);
+                        vendingMachine.Print();
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
