@@ -15,7 +15,8 @@ namespace LogicalProblems
                 Console.WriteLine("-------LogicalProblems ------");
                 Console.WriteLine("Select the option");
                 Console.WriteLine("1.FibonacciSeries" + "\n" +
-                                  "2.Exit" + "\n");
+                                  "2.PerfectNumber" + "\n" +
+                                  "3.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -26,6 +27,13 @@ namespace LogicalProblems
                         series.Print(range);
                         break;
                     case 2:
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        Console.WriteLine("\n" + "Check the Number Perfect or Not" + "\n");
+                        Console.WriteLine("Enter the Value" + "\n");
+                        int value = Convert.ToInt32(Console.ReadLine());
+                        perfectNumber.Check(value);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
