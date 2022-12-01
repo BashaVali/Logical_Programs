@@ -19,7 +19,8 @@ namespace LogicalProblems
                                   "3.PrimeNumber" + "\n" +
                                   "4.ReverseNumber" + "\n " +
                                   "5.CouponNumber" + "\n " +
-                                  "6.Exit" + "\n");
+                                  "6.StopWatch" + "\n" +
+                                  "7.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -55,6 +56,10 @@ namespace LogicalProblems
                         CouponNumber.GenerateCoupons(num);
                         break;
                     case 6:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.Start();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
