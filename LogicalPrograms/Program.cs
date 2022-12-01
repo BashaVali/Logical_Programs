@@ -17,8 +17,9 @@ namespace LogicalProblems
                 Console.WriteLine("1.FibonacciSeries" + "\n" +
                                   "2.PerfectNumber" + "\n" +
                                   "3.PrimeNumber" + "\n" +
-                                  "4.ReverseNumber" + "\n "+
-                                "5.Exit" + "\n");
+                                  "4.ReverseNumber" + "\n " +
+                                  "5.CouponNumber" + "\n " +
+                                  "6.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -48,6 +49,12 @@ namespace LogicalProblems
                         reverseNumber.Reverse(value2);
                         break;
                     case 5:
+                        CouponNumber couponNumber = new CouponNumber();
+                        Console.WriteLine("\n" + "Enter the Coupon Number" + "\n");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        CouponNumber.GenerateCoupons(num);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
