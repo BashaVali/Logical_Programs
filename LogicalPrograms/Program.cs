@@ -21,7 +21,8 @@ namespace LogicalProblems
                                   "5.CouponNumber" + "\n " +
                                   "6.StopWatch" + "\n" +
                                   "7.VendingMachine" + "\n" +
-                                  "8.Exit" + "\n");
+                                  "8.DayOfWeek" + "\n" +
+                                  "9.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -65,7 +66,10 @@ namespace LogicalProblems
                         vendingMachine.Change(2250);
                         vendingMachine.Print();
                         break;
-                    case 8:
+                    case 8:                       
+                        WeekDay.DayOfWeek();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
