@@ -6,7 +6,7 @@ namespace LogicalProblems
 {
     public class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Logical Programs");
             bool flag = true;
@@ -24,7 +24,8 @@ namespace LogicalProblems
                                   "8.DayOfWeek" + "\n" +
                                   "9.TemperatureConversion" + "\n" +
                                   "10.MonthlyPayment" + "\n" +
-                                  "11.Exit" + "\n");
+                                  "11.NewtonSquareRoot" + "\n" +
+                                  "12.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -79,6 +80,10 @@ namespace LogicalProblems
                         MonthlyPayments.MonthlyPayment(10, 20, 30);
                         break;
                     case 11:
+                        SquareRoot.Sqrt();
+                        break;
+                        break;
+                    case 12:
                         flag = false;
                         break;
                 }
