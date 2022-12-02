@@ -23,7 +23,8 @@ namespace LogicalProblems
                                   "7.VendingMachine" + "\n" +
                                   "8.DayOfWeek" + "\n" +
                                   "9.TemperatureConversion" + "\n" +
-                                  "10.Exit" + "\n");
+                                  "10.MonthlyPayment" + "\n" +
+                                  "11.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -73,8 +74,11 @@ namespace LogicalProblems
                     case 9:
                         TemperatureConversion.TemperatureConvert(98);
                         break;
-                        break;                     
                     case 10:
+                        MonthlyPayments monthlyPayments = new MonthlyPayments();
+                        MonthlyPayments.MonthlyPayment(10, 20, 30);
+                        break;
+                    case 11:
                         flag = false;
                         break;
                 }
