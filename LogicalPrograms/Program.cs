@@ -22,7 +22,8 @@ namespace LogicalProblems
                                   "6.StopWatch" + "\n" +
                                   "7.VendingMachine" + "\n" +
                                   "8.DayOfWeek" + "\n" +
-                                  "9.Exit" + "\n");
+                                  "9.TemperatureConversion" + "\n" +
+                                  "10.Exit" + "\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -70,6 +71,10 @@ namespace LogicalProblems
                         WeekDay.DayOfWeek();
                         break;
                     case 9:
+                        TemperatureConversion.TemperatureConvert(98);
+                        break;
+                        break;                     
+                    case 10:
                         flag = false;
                         break;
                 }
